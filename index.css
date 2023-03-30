@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    min-width: 350px;
+}
+img{
+    max-width: 100%;
+}
+.conteiner{
+    position: relative;
+    min-height: calc(100vh - 80px);
+}    
+.header{
+    background: #213B7E;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 80px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin-left: 54px;
+    flex-wrap: wrap;
+}
+.menu__list{
+    min-height: 23px;
+}
+.menu__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    padding: 28px 18px;
+}
+.menu__link_active{
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+.btn{
+    min-width: 153px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA5D21;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.content{
+    /* position: relative; */
+    max-width: 911px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.title{
+    text-align: center;
+    margin-top: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px; 
+    color: #000000;   
+}
+.parent{
+    width: 1300px;
+}
+.window{
+     display: none;
+    position: fixed;
+    width: 500px;
+    height: 418px;
+    margin-top: 12px;
+    margin-left: 200px;
+    background: #FFFFFF;
+    z-index: 1;
+    border: 1px solid #213B7E;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+    }
+    .visible{
+        display: block;
+    } 
+
+.go_site{
+    margin-top: 26px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+.login{
+    text-align: center;
+    margin-top: 36px;
+}
+.password{
+    text-align: center;
+    margin-top: 23px;
+}
+.input{
+    box-sizing: border-box;
+    margin-top: 36px;
+    width: 444px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    padding-bottom: 10px;
+    padding-top: 17px;
+} 
+.input::placeholder{
+    font-size: 24px;
+    color: #808080;
+     padding-left: 14px;
+} 
+.enter{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.button{
+    min-width: 153px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA5D21;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.photo{
+    margin-top: 25px;
+    width: 100%;
+    max-width: 523px;
+}    
+.text__info{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.basic__information{
+   max-width: 634px;
+}
+.subtitle{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;    
+}
+.about__text{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.ourselves{
+   color: #EA5D21;
+   font-style: italic;
+
+}
+.together{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+    width: 129px;
+    padding-left: 761px;
+    margin-top: 53px;
+    font-family: 'Lobster', cursive;
+}
+.quotation-marks{
+    font-size: 64px;
+    position: absolute;
+    left: 728px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    margin-top: -17px;
+    color: #646464;
+}
+    .learn{
+        position: absolute;
+        margin-top: -9px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: #646464;
+}
+ .quotation-marks_right{
+    margin-left: 156px;
+    margin-top: 26px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    color: #646464;
+}
+/* студенты */
+.content_students{
+    padding-left: calc(50% - 1202px / 2);
+    padding-right: calc(50% - 1202px / 2);
+}
+.sub_title{
+    margin-top: 37px;
+}
+.block_photo{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.student{
+    width: 200px;
+    position: relative;
+}    
+.student_new{
+    position: absolute;
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+background: #3AA828;
+border-radius: 20px;
+padding: 1px 2px 1px 5px;
+top: -12px;
+right: -13px;
+text-transform: uppercase;
+}
+.student_name{
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+text-align: center;
+}
+/* О курсе */
+.main-block{
+    max-width: 911px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.course{
+    margin-top: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+.title-video{
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;    
+    color: #000000;
+}
+.video-info{
+    margin-top: 15px;
+    width: 820px;
+    border: 2px solid #EA5D21;
+}
+/* Контакты */
+.locate{
+    margin-top: 33px;
+    margin-left: 286px;
+}
+.mapping{
+    margin-top: 25px;
+    padding-left: calc(50% - 1268px / 2); 
+    padding-right: calc(50% - 1268px / 2);
+}
+.contacts{
+    margin-top: 15px;
+    margin-left: 288px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}
+.address{
+    margin-top: 10px;
+    margin-left: 288px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.number{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+.telephone{
+    margin-top: 15px;
+    margin-left: 288px;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000000;
+}
+ .footer{
+    height: 60px;
+    margin-top: 187px;
+    background: #213B7E;
+}
+.year{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.centre{
+    color: rgba(255, 255, 255, 0.5); 
+}
+@media (max-width: 1300px){
+    .header{
+        padding-right: 30px;
+    }
+    .adaptive{
+        width: 100%;
+    }
+    .mapping{
+        padding-left: 16px;
+        padding-right: 26px;
+    }
+    .locate{
+        margin-left: 0;
+        text-align: center;
+    }
+.contacts{
+    margin-left: 0;
+    text-align: center;
+}
+.address{
+    margin-left: 0;
+    text-align: center; 
+}
+.telephone{
+    display: block;
+    text-align: center;
+    margin-left: 0;
+}
+}
+
+ @media (max-width: 1200px){
+    .together{
+        top: 0;
+    right: 17%;
+    }
+    .basic__information{
+       width: 500px;
+    }
+    .title{
+        text-align: center;
+    }
+    .photo{
+       display: block;
+       margin: 0 auto;
+    }
+    .block_photo{
+        justify-content: center;
+    }
+    .sub_title{
+        text-align: center;
+    }
+}
+ /* ноут и планшет */
+@media (max-width: 1024px){
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .menu{
+        margin-left: 0;
+    }
+    .menu__link{
+        font-size: 16px;
+        padding: 11px 16px;
+        font-size: 16px;
+    }
+    
+    .quotation-marks{
+        left: 690px;
+    }
+    .together{
+        padding-left: 721px;
+    }
+}
+@media(max-width: 890px){
+    .together{
+        top: 300px;
+        right: 350px;
+    }
+}
+@media(max-width: 880px){
+    .basic__information{
+        width: 100%;
+    }
+    .course{
+        text-align: center;
+    }
+    .title-video{
+        text-align: center;
+    }
+    .video-info{
+        padding-left: 16px;
+        padding-right: 16px;
+        border: none;
+    }
+}
+
+/* мобилка */
+    @media (max-width: 768px){
+        .header{
+            padding-bottom: 12px;
+        }
+        .logo{
+            margin-top: -65px;
+        }
+        .menu{
+            
+            color: #FFFFFF;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 280px;
+            margin-right: 150px;
+        }
+        .menu__link_active{
+            background-color: #FFFFFF;
+            color: #213B7E;
+        }   
+
+    .menu__list{
+        margin-top: 12px;
+        margin-left: 227px;
+        margin-top: 12px;
+    }
+    .content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .together{
+        padding-left: 0;
+        margin-top: 63px;
+        margin-left: 35px;
+    } 
+    .quotation-marks{
+        left: 0;
+    }
+    .learn{
+        margin-left: 32px;
+    }
+    .window{
+        width: 85%;
+        margin: 0 auto;
+        margin-left: 7px;
+    }
+    .login{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+        .password{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    
+    .input{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .enter{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+}
+    
+    @media (max-width: 720px){
+        .together{
+            display: none;
+        }
+    }
+    
+    
+    
